@@ -1,0 +1,639 @@
+#playback .background img {
+    display: none;
+}
+/*------------------------------------------------------------------------*/
+/*Redimensionamento fundo*/
+.room-background {
+background: url(https://i.imgur.com/irDqeh6.jpg) no-repeat !important;
+width: 500% !important;
+height: 500% !important;}
+
+/* Chat plug */
+#woot-rs, #grab-rs, #meh-rs {
+	top: -1px;
+	border-radius: 10px 10px 0 0;
+	background: hsla(210,10%,5%,.8);
+	z-index: 0;
+}
+#woot-rs .title, #grab-rs .title, #meh-rs .title {
+	border-radius: 10px 10px 0 0;
+}
+#chat .cm.rsshit.message {
+	border: none !important;
+}
+.app-right {
+	background: hsla(210,10%,5%,.9) !important;
+}
+#rcs-menu-container .container .group {
+    border-color: hsl(130, 69%, 18%) !important;
+background: linear-gradient(hsl(130, 94%, 7%), hsla(108, 95%, 6%, 0.95)) !important;
+}
+.rcs.item.selected span {
+    color: hsl(131, 78%, 36%) !important;
+}
+
+
+#chat-header {
+    border-color: #0e8a21 !important;
+    background: linear-gradient(to right, hsl(130, 67%, 22%), hsl(122, 86%, 12%));
+}
+#chat-messages::-webkit-scrollbar,
+.dropdown dd::-webkit-scrollbar,
+#woot-rs-list::-webkit-scrollbar,
+#grab-rs-list::-webkit-scrollbar,
+#meh-rs-list::-webkit-scrollbar,
+.dialog::-webkit-scrollbar {
+	width: 7px !important;
+}
+#chat-messages::-webkit-scrollbar-thumb,
+.dropdown dd::-webkit-scrollbar-thumb,
+#woot-rs-list::-webkit-scrollbar-thumb,
+#grab-rs-list::-webkit-scrollbar-thumb,
+#meh-rs-list::-webkit-scrollbar-thumb,
+.dialog::-webkit-thumb,
+.jspDrag {
+	background: linear-gradient(to right, hsl(210,10%,50%), hsl(210,10%,20%));
+	border-radius: 5px;
+}
+.jspTrack { box-shadow: inset -1px 0 10px hsla(0,0%,20%,1); 
+}
+.app-right #chat-input, #dashboard .search, #search-bar, #filter-bar, #import-youtube .youtube-input, #user-friends .search, .app-right .friends .list-header .input-background {
+    border-radius: 20px;
+    background: linear-gradient(to top, hsla(108, 94%, 10%, 0.7), hsla(125, 89%, 13%, 0.7));
+}
+
+.focused {
+    color: #EEE !important;
+    background: linear-gradient(to top, hsla(127, 86%, 32%, 0.59), hsla(130, 86%, 36%, 0.46)) !important;
+}
+#chat-input-field {
+	color: #888 !important;
+	font-weight: bold;
+}
+#chat-input.focused #chat-input-field{
+	color: #EEE !important;
+}
+#chat-messages {
+border-bottom: none !important;
+}
+
+
+#chat .cm {
+	animation: fadein .2s;
+}
+#chat .cm.message .timestamp {
+	color: #818285;
+}
+#chat .cm .badge-box {
+	background: transparent !important;
+}
+
+#chat .msg:hover {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+border-radius: 10px;}
+#chat .msg:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;}
+#chat .msg:hover:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);}
+
+#chat .cm:nth-child(2n+1) {
+background: none !important;
+}
+
+#user-lists .header .button.selected {
+    border-radius: 0px;
+    background: radial-gradient(hsl(129, 67%, 35%), hsl(127, 67%, 20%));
+    border: none !important;
+}
+
+/* Transparencia parte superior e inferior */
+#user-menu .avatar {
+	background: linear-gradient(rgba(0, 0, 0, 0.12)70%, hsla(202, 47%, 57%, 0.56) 80%),  linear-gradient(hsl(200, 79%, 25%), hsl(215, 97%, 10%)) !important
+}
+.app-header, #app-menu.in-room, #footer, #search, #video-only-dj {
+	background: linear-gradient(hsla(210,10%,20%,.6), hsla(210,10%,10%,.6));
+}
+.app-header #history-button {
+	background: none;
+}
+#rs-skip-button {
+background: none !important;
+}
+.app-header #header-panel-bar .selected, .app-header #history-button.selected {
+    background: linear-gradient(hsl(130, 66%, 41%), hsl(125, 66%, 14%));
+}
+
+/* Indicadores notificação */
+#user-menu .count, .requests .count, .buttons .count, .request-count, .friends .header i {
+    background: radial-gradient(hsl(127, 85%, 51%), hsl(127, 80%, 27%)) !important;
+
+    text-shadow: 0 0 3px #000;
+}
+#user-menu .selected .count, .button:hover .count, #friends-button .request-count:hover, #friends-button.selected span, #user-friends .requests.selected span, .friends .header:hover i {
+    background: radial-gradient(hsl(66, 74%, 51%), hsl(69, 100%, 59%)) !important;
+    font-weight: bold;
+}
+
+/* Hover */
+div.row.clickable:hover {
+        background: linear-gradient(to right, hsla(130, 69%, 11%, 0.28), hsla(116, 72%, 14%, 0.35));
+}
+
+/* Menu inferior do usuario */
+#footer-user .buttons .button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+	} 
+
+/* Buttons grandient */
+#playlist-button {
+     background: linear-gradient(hsl(130, 69%, 23%), hsl(126, 68%, 11%));
+}
+#app-menu .button:hover, #room .friends.has-requests .header {
+        background: linear-gradient(hsl(130, 69%, 23%), hsl(126, 68%, 11%));
+}
+#app-menu .button:hover, #room .friends.has-requests .header:hover {
+    background: linear-gradient(hsl(130, 67%, 36%), hsl(126, 67%, 16%));
+}
+#footer .bar-button .section .chevron:before {
+    background: #bcd824;
+    content: '';
+    -webkit-transform: skew(0deg,25deg);
+    -moz-transform: skew(0deg,25deg);
+    -ms-transform: skew(0deg,25deg);
+    -o-transform: skew(0deg,25deg);
+    transform: skew(0deg,25deg);
+}
+#footer .bar-button .section .chevron:after {
+    background: #bcd824;
+    -webkit-transform: skew(1deg,-25deg);
+    -moz-transform: skew(0deg,-25deg);
+    -ms-transform: skew(0deg,-25deg);
+    -o-transform: skew(0deg,-25deg);
+    transform: skew(0deg,-25deg);}
+
+
+/* -------- Playlist ------------- */
+/* Area das playlist */
+#user-menu, #room-settings-menu, #playlist-menu {
+    background: linear-gradient(to right, hsla(210, 15%, 9%, 0.58), hsla(210, 12%, 6%, 0.55));
+}
+#playlist-menu .count {
+    color: hsl(127, 77%, 51%) !important;
+}
+#playlist-menu .menu .row.selected {
+    background: linear-gradient(to right, hsla(130, 68%, 23%, 0.28), hsla(116, 76%, 27%, 0.35)) !important;
+}
+#playlist-menu .row:hover {
+    background: linear-gradient(to right, hsla(130, 69%, 11%, 0.28), hsla(116, 72%, 14%, 0.35));
+}
+ #playlist-create {
+    background: linear-gradient(hsl(130, 69%, 23%), hsl(126, 68%, 11%));
+}
+#playlist-create:hover {
+    background: linear-gradient(hsl(129, 66%, 34%), hsl(125, 60%, 21%));
+}
+ #playlist-import {
+    background: linear-gradient(hsl(130, 69%, 23%), hsl(126, 68%, 11%));
+}
+#playlist-import:hover {
+    background: linear-gradient(hsl(129, 66%, 34%), hsl(125, 60%, 21%));
+}
+
+
+
+/* Transparecia */
+#user-view, #dashboard, #room-settings, #media-panel, #playlist-panel, #history-panel {
+	background: linear-gradient(hsla(210,10%,7%,.9), hsla(210,10%,5%,.9)) !important;
+}
+.grid .cell .top .expires, .grid .cell .top .prices, #the-user-profile .badge-box, #media-panel {
+    background: transparent !important;
+}
+/* Correção posicionamento menu de funções playlist */
+#media-panel .header {
+    top: 0px;}
+
+
+/* Playlists */
+#media-panel .header .button span {
+	color: #ffffff !important;
+}
+#media-panel #playlist-activate-button {
+background: linear-gradient(hsl(64, 96%, 29%), hsl(61, 96%, 21%));
+	border-radius: 30px 0 0 30px;
+}
+#media-panel #playlist-activate-button:hover {
+background: linear-gradient(hsl(58, 99%, 43%), hsl(64, 97%, 31%));
+}
+#media-panel #playlist-activate-button.active {
+    background: linear-gradient(hsl(64, 69%, 51%), hsl(61, 78%, 32%));
+}
+#playlist-activate-button i, #playlist-menu .row i {
+	background-position: -70px -140px;
+}
+#media-panel #playlist-activate-button.active span,
+#dialog-user-role .name {
+	color: #eee !important;
+}
+#media-panel #playlist-activate-button.active:hover {
+	cursor: default !important;
+}
+#media-panel #playlist-edit-button {
+    background: linear-gradient(hsl(64, 69%, 51%), hsl(61, 78%, 32%));
+}
+#media-panel #playlist-edit-button:hover {
+background: linear-gradient(hsl(58, 99%, 43%), hsl(64, 97%, 31%));
+}
+#media-panel #playlist-shuffle-button {
+    background: linear-gradient(hsl(64, 69%, 51%), hsl(61, 78%, 32%));
+}
+#media-panel #playlist-shuffle-button:hover {
+background: linear-gradient(hsl(58, 99%, 43%), hsl(64, 97%, 31%));
+}
+#media-panel #playlist-delete-button {
+	border-radius: 0 7px 7px 0;
+    background: linear-gradient(hsl(64, 69%, 51%), hsl(61, 78%, 32%));
+}
+#media-panel #playlist-delete-button:hover {
+background: linear-gradient(hsl(58, 99%, 43%), hsl(64, 97%, 31%));
+}
+#media-panel .media-list .playlist-media-first-item.selected {
+background: linear-gradient(to bottom, hsl(220, 66%, 37%), hsl(220, 71%, 19%)) !important;
+	border-radius: 7px;
+}
+#media-panel .media-list .playlist-media-first-item.now-playing {
+background: linear-gradient(hsl(125, 69%, 37%), hsl(126, 68%, 21%)) !important;
+	border-radius: 7px;
+	border-bottom: none !important;
+}
+#media-panel .media-list .playlist-media-item.in-history, #media-panel .media-list .playlist-media-last-item.in-history,  {
+	color: hsl(20,80%,55%);
+	border-radius: 7px;
+}
+#media-panel .media-list .actions {
+	background: linear-gradient(hsla(210, 30%, 37%, 0.55), hsla(221, 25%, 17%, 0.55));
+	border-radius: 20px 0 0 20px;
+}
+#media-panel .media-list .playlist-media-first-item .actions .action:hover,
+#media-panel .media-list .playlist-media-first-item.now-playing .actions .action:hover,
+#media-panel .media-list .playlist-media-last-item .actions .action:hover,
+.playlist-media-item .actions .action:hover {
+    background: radial-gradient(hsl(64, 72%, 51%), hsl(62, 77%, 33%)) !important;
+}
+#media-panel .media-list .playlist-media-first-item .actions .action:hover:first-child,
+#media-panel .media-list .playlist-media-first-item.now-playing .actions .action:hover:first-child,
+#media-panel .media-list .playlist-media-last-item .actions .action:hover:first-child,
+.playlist-media-item .actions .action:hover:first-child {
+	border-radius: 20px 0 0 20px;
+}
+#media-panel .media-list .actions {
+    background: linear-gradient(hsla(64, 69%, 53%, 0.55), hsla(61, 67%, 24%, 0.53));
+    border-radius: 20px 0 0 20px;
+}
+.media-list.history .actions {
+	    border-radius: 20px 0px 0px 20px;
+}
+#media-panel .media-list .playlist-media-item.selected, #media-panel .media-list .playlist-media-last-item.selected, #media-panel .media-list .playlist-media-item.in-history.selected {
+	color: #EEE;
+	background: linear-gradient(hsl(126, 89%, 14%), hsl(125, 94%, 6%));
+	border-radius: 7px;
+}
+
+/* Botoes area de importar de serviços */
+#playlist-import-panel .button {
+background: linear-gradient(hsl(130, 69%, 23%), hsl(126, 68%, 11%));
+border-radius: 10px;
+}
+#playlist-import-panel .button:hover {
+    background: linear-gradient(hsl(129, 66%, 34%), hsl(125, 60%, 21%));
+border-radius: 10px;
+}
+
+/* Diversos */
+
+#user-menu, #room-settings-menu, #playlist-menu {
+    background: linear-gradient(to right, hsla(210, 15%, 9%, 0.58), hsla(210, 12%, 6%, 0.55));
+}
+#user-view, #dashboard, #room-settings, #media-panel, #playlist-panel, #history-panel {
+	background: linear-gradient(hsla(210,10%,7%,.9), hsla(210,10%,5%,.9)) !important;
+}
+#user-menu .item:hover, #room-settings-menu .item:hover {
+	background: linear-gradient(hsla(129, 55%, 30%, 0.55), hsla(125, 68%, 12%, 0.48));
+}
+#user-menu .item.selected, #room-settings-menu .item.selected {
+	background: linear-gradient(hsl(129, 66%, 34%), hsl(125, 60%, 21%));
+}
+#room-settings .general-settings button, #room-settings .general-settings .option.enabled button.off {
+	background: linear-gradient(hsl(220,5%,20%), hsl(220,5%,10%)) !important;
+}
+#room-settings .general-settings button:hover, #room-settings .general-settings .option.enabled button.off:hover {
+	background: linear-gradient(hsl(129, 60%, 21%), hsla(126, 58%, 12%, 0.75)) !important;
+}
+#room-settings .general-settings button.off, #room-settings .general-settings .option.enabled button.on {
+		background: linear-gradient(hsl(129, 66%, 34%), hsl(125, 60%, 21%)) !important
+}
+#the-user-profile .notifications.section .row {
+	border-radius: 10px;
+	background: linear-gradient(hsl(129, 66%, 34%), hsl(125, 60%, 21%));
+}
+#the-user-profile .notifications.section .row:hover {
+    border-radius: 10px;
+    background: linear-gradient(hsla(129, 55%, 30%, 0.55), hsla(125, 68%, 12%, 0.48));
+}
+.tab-menu button, #user-settings .container button, .subscribe-button, .dropdown, #dialog-user-role .role-menu {
+	border-radius: 10px;
+background: linear-gradient(hsl(220,5%,20%), hsl(220,5%,10%));
+}
+#user-settings .container button:hover {
+	background: linear-gradient(hsl(10,80%,30%), hsl(0,80%,20%));
+}
+.subscribe-button:hover {
+	background: linear-gradient(hsl(40,70%,30%), hsl(40,70%,20%));
+}
+.tab-menu button:hover, .dropdown:hover {
+    background: linear-gradient(hsla(129, 55%, 30%, 0.55), hsla(125, 68%, 12%, 0.48));
+}
+.tab-menu .selected, .dropdown.open {
+background: linear-gradient(hsl(129, 66%, 34%), hsl(125, 60%, 21%)) !important;
+}
+.dropdown dt {
+	border-radius: 10px;
+}
+.dropdown.open, .dropdown.open dt, #dialog-user-role .role-menu:hover {
+	border-radius: 10px 10px 0 0;
+	font-weight: normal;
+}
+.dropdown dt .level {
+	color: #eee !important;
+}
+.dropdown dd span {
+	color: #AAA;
+}
+.dropdown dd .row:hover span {
+	color: #FFF;
+}
+.dropdown dd, #chat-suggestion, #dialog-user-role .role-menu .menu ul li, #search-suggestion li, #dialog-restricted-media .row.selected {
+	background: hsla(210,10%,10%,.8);
+}
+#dialog-user-role .role-menu .menu ul li {
+	border-color: hsla(210,10%,8%,.8);
+}
+.dropdown dd .row:hover, .chat-suggestion-item[style='background: rgb(45, 49, 58);'], #search-suggestion .search-suggestion-item.selected, #dialog-restricted-media .row.selected, #dialog-user-role .role-menu .menu ul li:hover {
+    background: linear-gradient(hsl(129, 61%, 19%), hsl(125, 71%, 9%)) !important;
+}
+.grid .cell {
+    border-radius: 15px;
+    background: linear-gradient(hsl(128, 74%, 45%), hsl(126, 78%, 8%)) !important;
+}
+.grid .cell .meta .join:hover {
+    background: hsl(125, 69%, 31%) !important;
+    border: 1px solid hsl(125, 81%, 50%) !important;
+    border-radius: 30px;
+}
+.user-content .grid .cell .top {
+background: linear-gradient(to bottom,rgba(31, 40, 58, 0.65) 0,rgba(13, 17, 25, 0.52) 56%,rgba(12, 16, 23, 0.72) 73%,rgb(13, 25, 5) 100%);
+}
+.user-content .grid .cell:hover>.top {
+background: linear-gradient(hsla(220, 68%, 46%, 0.29), hsla(220, 69%, 30%, 0.26));
+}
+#user-inventory .avatars .grid .cell.selected {
+	box-shadow: 0px 3px 0px 0px #063c8e;
+}
+#user-inventory .avatars .grid .cell.selected .top:hover {
+background: linear-gradient(hsla(220, 68%, 46%, 0.29), hsla(220, 69%, 30%, 0.26));
+}
+#user-inventory .avatars .grid .cell.selected .top {
+	background: linear-gradient(to bottom,rgba(31, 40, 58, 0.65) 0,rgba(13, 17, 25, 0.52) 56%,rgba(12, 16, 23, 0.72) 73%,rgb(20, 26, 41) 100%);
+}
+#user-inventory .badges .grid .cell {
+	background: linear-gradient(to bottom,rgba(31, 40, 58, 0.65) 0,rgba(13, 17, 25, 0.52) 56%,rgba(12, 16, 23, 0.72) 73%,rgb(20, 26, 41) 100%) !important;
+}
+#user-store .misc .grid .cell .title-bar span {
+    font-size: 15px;
+}
+#user-inventory .badges .grid .cell:hover {
+background: linear-gradient(hsla(220, 68%, 46%, 0.29), hsla(220, 69%, 30%, 0.26)) !important;
+}
+#user-store .misc .grid .cell .title-bar {
+background: none !important
+}
+.grid .cell .bar, .grid .cell .meta, #user-friends .row {
+	background: linear-gradient(hsl(210,10%,15%), hsl(210,10%,10%)) !important;
+}
+.grid .cell .meta .host {
+	text-align: center;
+	top: 6px;
+	color: #eee !important;
+}
+.grid .cell .meta .join {
+    background: hsl(118, 74%, 16%) !important;
+    border: 1px solid hsl(116, 72%, 29%) !important;
+    border-radius: 30px;
+}
+.grid .cell .bar .favorite.selected {
+    background: linear-gradient(hsl(128, 66%, 31%), hsl(126, 62%, 23%)) !important;
+}
+.grid .cell .bar .favorite.selected .icon-grab {
+	background-position: -35px -280px;
+}
+#the-user-profile .blurb .box {
+    background: rgba(0, 0, 0, 0.12);
+}
+#user-store .misc .grid .cell .title-bar {
+    background: linear-gradient(hsl(128, 66%, 31%), hsl(126, 62%, 23%)) !important;}
+
+/* Botão voltar para comunidade */
+#footer .back {
+        background: linear-gradient(hsl(129, 66%, 34%), hsl(125, 60%, 21%)) !important;
+}
+#footer .back:hover {
+    background: linear-gradient(hsl(129, 61%, 19%), hsl(125, 71%, 9%)) !important;
+}
+.user-content.profile .notifications .row .timestamp {
+    color: #ffffff;}
+/* Barra de progressão XP */
+
+#the-user-profile .experience .bar .progress, #footer-user .info .meta .bar .progress {
+    border-radius: 20px;
+    background: radial-gradient(at top left, hsla(0,0%,50%,0), hsl(133, 67%, 15%)), linear-gradient(hsl(122, 93%, 22%), hsl(119, 93%, 12%));
+   text-shadow: 0 0 3px black !important;
+}
+
+#footer-user .buttons .button:hover, #video-only-dj:hover {
+	background: none !important;
+}
+#footer-user .info {
+	background: linear-gradient(hsla(210,5%,10%,.8), hsla(210,5%,5%,.8));
+	text-shadow: 0 0 5px #000;
+}
+#footer-user .name span {
+	font-weight: bold;
+}
+#footer-user .info .points .pp {
+	color: hsl(200,100%,70%);
+}
+.inventory.button .background {
+	visibility: hidden;
+}
+#footer-user .buttons .button.inventory:hover {
+    -webkit-box-shadow: inset 1px 0 0 0 #0A0A0A;
+    -moz-box-shadow: inset 1px 0 0 0 #0A0A0A;
+    box-shadow: inset 1px 0 0 0 #0A0A0A;
+}
+#footer-user .info .meta div.bar {
+    background: #2a3c2de0;}
+
+/* Leveis perfil */
+div.level.earned.ep .label {
+background: linear-gradient(hsl(124, 6%, 51%), hsl(127, 9%, 17%)) !important;
+}
+.experience .levels .level {
+    background: linear-gradient(hsl(116, 92%, 20%), hsl(105, 93%, 6%));
+}
+.experience .levels .level .label {
+    background: linear-gradient(hsl(205, 9%, 31%), hsl(205, 10%, 15%));
+}
+.experience .levels .level.mystery .label { 
+background: linear-gradient(hsl(111, 22%, 17%), hsl(119, 22%, 2%)) !important;
+}
+
+/* Menu funções plug */
+#app-menu .button, #room .friends.has-requests .header {
+    background: linear-gradient(hsl(129, 66%, 34%), hsl(125, 60%, 21%));
+}
+
+
+
+
+/* Botão DJ {Sair/ Entrar na Fila} */
+/* Botão deslizante */
+#dj-button {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#dj-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #282c35;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#dj-button:hover, #dj-button:focus, #dj-button:active {
+  color: white;
+}
+#dj-button:hover:before, #dj-button:focus:before, #dj-button:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#dj-button .left {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 72px;
+    height: 100%;
+    border-radius: 4px 0 0 4px;}
+
+
+#dj-button {
+    position: absolute;
+    top: 450px;
+    height: 61px;
+    width: 230px;
+    background: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    line-height: 2px;
+    z-index: 8;
+}
+
+
+#dj-button span {
+  color: rgba(255, 255, 255, 0);
+line-height: 900px;
+}
+
+#dj-button span:hover {
+color: rgba(255, 255, 255, 1);
+line-height: 20px;
+}
+#dj-button:hover~.span {
+color: rgba(255, 255, 255, 1);
+line-height: 20px;
+}
+
+
+
+
+
+#vote .crowd-response {
+    height: 40px;}
+
+#vote .bottom {
+    width: 0%;}
+
+
+#woot span.value {
+width: 25px !important;
+height: 25px !important;
+left: 33px !important;
+top: -8px !important;
+    background-color: hsla(124, 65%, 18%, 1);
+    border-radius: 50px 50px 90px 90px !important;
+}
+
+#grab span.value {
+width: 25px !important;
+height: 25px !important;
+left: 33px !important;
+top: -8px !important;
+    background-color: hsla(0, 65%, 18%, 1);
+    border-radius: 50px 50px 90px 90px !important;
+}
+
+#meh span.value {
+width: 25px !important;
+height: 25px !important;
+left: 33px !important;
+top: -8px !important;
+    background-color: hsla(268, 65%, 18%, 1);
+    border-radius: 50px 50px 90px 90px !important;
+}
+
