@@ -2,7 +2,7 @@
    "room": "Brasileiríssimos",
    "author": "Kenan",
    "icon": null,
-   "css": "https://rawgit.com/AwayShift/Brasileirissimos/master/bot.css",
+   "css": "https://rawgit.com/AwayShift/Brasileirissimos/master/Tema.css",
    "rules": {
       "allowAutorespond": true,
       "allowAutowoot": true,
