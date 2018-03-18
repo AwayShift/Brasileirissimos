@@ -519,12 +519,11 @@ background: linear-gradient(hsl(111, 22%, 17%), hsl(119, 22%, 2%)) !important;
 }
 
 
-
-
 /* Botão DJ {Sair/ Entrar na Fila} */
 /* Botão deslizante */
 #dj-button {
   display: inline-block;
+    border-radius: 10px 2px 2px 10px;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -543,7 +542,8 @@ background: linear-gradient(hsl(111, 22%, 17%), hsl(119, 22%, 2%)) !important;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #282c35;
+background: linear-gradient(to bottom,#323638 0,#151819 100%);
+    border-radius: 10px 2px 2px 10px;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -594,20 +594,34 @@ line-height: 900px;
 color: rgba(255, 255, 255, 1);
 line-height: 20px;
 }
-#dj-button:hover~.span {
+#dj-button:hover ~ span {
 color: rgba(255, 255, 255, 1);
 line-height: 20px;
 }
 
 
-
+/* Botoes de voto */
+#woot .bottom, #woot.selected {
+    background: linear-gradient(hsl(129, 66%, 34%), hsl(125, 60%, 21%)) !important;
+}
+#grab .bottom, #grab.selected {
+    background: linear-gradient(hsl(267, 55%, 39%), hsl(258, 50%, 16%)) !important;
+}
+#meh .bottom, #meh.selected {
+    background: linear-gradient(hsl(0, 65%, 25%), hsl(6, 69%, 12%)) !important;
+}
 
 
 #vote .crowd-response {
     height: 40px;}
 
+
 #vote .bottom {
     width: 0%;}
+
+#meh, #grab, #woot {
+    background: linear-gradient(hsl(0, 4%, 22%), hsl(6, 5%, 5%)) !important;
+}
 
 
 #woot span.value {
@@ -624,7 +638,7 @@ width: 25px !important;
 height: 25px !important;
 left: 33px !important;
 top: -8px !important;
-    background-color: hsla(0, 65%, 18%, 1);
+    background-color: hsla(268, 65%, 18%, 1);
     border-radius: 50px 50px 90px 90px !important;
 }
 
@@ -633,7 +647,14 @@ width: 25px !important;
 height: 25px !important;
 left: 33px !important;
 top: -8px !important;
-    background-color: hsla(268, 65%, 18%, 1);
+    background-color:  hsla(0, 65%, 18%, 1);
     border-radius: 50px 50px 90px 90px !important;
 }
 
+#dj-button .left {
+    background: linear-gradient(to bottom,#119dc3 0,#0a4761 100%);
+    border-radius: 10%;
+}
+#dj-button.is-leave .left, #dj-button.is-quit .left {
+    background: linear-gradient(to bottom,#f14915 0,#792110 100%);
+}
