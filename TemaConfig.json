@@ -1,0 +1,47 @@
+{
+   "room": "Brasileiríssimos",
+   "author": "Kenan",
+   "icon": null,
+   "css": "https://rawgit.com/AwayShift/Brasileirissimos/master/Tema.css",
+   "rules": {
+      "allowAutorespond": true,
+      "allowAutowoot": true,
+      "allowAutojoin": true,
+      "allowAutograb": true,
+      "allowSmartVote": true,
+      "allowEmotes": true,
+      "allowShowingMehs": true,
+      "forceSmartVote": false
+   },
+   "ccc": {
+      "admin": null,
+      "ambassador": null,
+      "host": "#009acd",
+      "cohost": "#009acd",
+      "manager": "#ffff00",
+      "bouncer": "#ffff00",
+      "rdj": "#32cd32",
+      "subscriber": null,
+      "silversubscriber": null,
+      "friend": null,
+      "user": "#32cd32"
+   },
+   "images": {
+      "background": null,
+      "playback": null,
+      "admin": null,
+      "ambassador": null,
+      "host": null,
+      "cohost": null,
+      "manager": null,
+      "bouncer": null,
+      "rdj": null,
+      "subscriber": null,
+      "silversubscriber": null
+   },
+   
+   
+     "emotes": {
+    	"emote_name": null
+    }
+}
